@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1504403712">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1504467981">
   <File Type="VDS-TIMING-PB" Name="shift_reg_PIPO_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="shift_reg_PIPO_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="shift_reg_PIPO.dcp"/>
@@ -36,6 +36,14 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/lab1_PIPO/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1408379954"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

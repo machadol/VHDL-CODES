@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.runs/synth_1'
+HD_PWD='/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

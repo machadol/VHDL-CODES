@@ -7,16 +7,16 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.cache/wt [current_project]
-set_property parent.project_path /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.xpr [current_project]
+set_property webtalk.parent_dir /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.cache/wt [current_project]
+set_property parent.project_path /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.cache/ip [current_project]
+set_property ip_output_repo /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.srcs/sources_1/new/clk_div.vhd
-  /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.srcs/sources_1/new/shift_reg_PIPO.vhd
+  /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/sources_1/new/clk_div.vhd
+  /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/sources_1/new/shift_reg_PIPO.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -26,6 +26,9 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/constrs_1/imports/lab1_PIPO/Basys3_Master.xdc
+set_property used_in_implementation false [get_files /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/constrs_1/imports/lab1_PIPO/Basys3_Master.xdc]
+
 
 synth_design -top shift_reg_PIPO -part xc7a35tcpg236-1
 

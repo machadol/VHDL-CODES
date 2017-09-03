@@ -1,0 +1,15 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.2/bin/unwrapped/lnx64.o/xelab -wto 6b81f63f4bd5440fac2e960310930b2a --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_FSM_Moore_behav xil_defaultlib.tb_FSM_Moore -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.FSM_Moore [fsm_moore_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fsm_moore
+Built simulation snapshot tb_FSM_Moore_behav

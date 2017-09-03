@@ -1,0 +1,5 @@
+awk: cmd. line:1: warning: command line argument `/etc/upstream-release' is a directory: skipped
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/Teste_2_Mealy/Teste_2_Mealy.srcs/sources_1/new/FSM_Mealy.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FSM_Mealy
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/Teste_2_Mealy/Teste_2_Mealy.srcs/sources_1/new/tb_FSM_Mealy.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FSM_Mealy

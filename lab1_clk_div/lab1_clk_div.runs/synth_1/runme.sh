@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_clk_div/lab1_clk_div.runs/synth_1'
+HD_PWD='/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_clk_div/lab1_clk_div.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log mux_4x1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux_4x1.tcl
+EAStep vivado -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl

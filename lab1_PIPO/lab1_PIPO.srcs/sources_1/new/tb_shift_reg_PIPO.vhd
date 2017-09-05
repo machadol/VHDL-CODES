@@ -42,7 +42,19 @@ end process;
 
 shift_reg:process
 begin
-    
+
+s_parallel_in <= "00000000"; s_reset_load <= '0'; s_din <= '0';
+wait for 5 ns;
+s_parallel_in <= "00101001"; s_reset_load <= '1'; s_din <= '1';
+wait for 20 ns;
+s_reset_load <= '0';
+wait for 40 ns;
+
+s_din <= '0';
+wait for 120 ns;
+s_din <= '1'; 
+wait;
+
 end process;
 
 end Behavioral;

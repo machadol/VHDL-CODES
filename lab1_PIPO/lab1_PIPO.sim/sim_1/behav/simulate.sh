@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim shift_reg_PIPO_behav -key {Behavioral:sim_1:Functional:shift_reg_PIPO} -tclbatch shift_reg_PIPO.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim tb_shift_reg_PIPO_behav -key {Behavioral:sim_1:Functional:tb_shift_reg_PIPO} -tclbatch tb_shift_reg_PIPO.tcl -log simulate.log

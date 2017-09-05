@@ -2,13 +2,13 @@
 # Webtalk v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sat Sep  2 23:10:24 2017
-# Process ID: 11393
-# Current directory: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.sim/sim_1/behav
-# Command line: wbtcv -mode batch -source /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/xsim.dir/shift_reg_PIPO_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/webtalk.log
-# Journal file: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/webtalk.jou
+# Start of session at: Mon Sep  4 22:33:03 2017
+# Process ID: 10105
+# Current directory: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/xsim.dir/tb_shift_reg_PIPO_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/webtalk.log
+# Journal file: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/webtalk.jou
 #-----------------------------------------------------------
-source /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/xsim.dir/shift_reg_PIPO_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-codes/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/xsim.dir/shift_reg_PIPO_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Sep  2 23:10:28 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Sat Sep  2 23:10:28 2017...
+source /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/xsim.dir/tb_shift_reg_PIPO_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.sim/sim_1/behav/xsim.dir/tb_shift_reg_PIPO_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  4 22:33:06 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  4 22:33:06 2017...

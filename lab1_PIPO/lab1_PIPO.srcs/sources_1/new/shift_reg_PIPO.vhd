@@ -7,69 +7,41 @@ entity shift_reg_PIPO is
             clk         :  in STD_LOGIC;         
             din         :  in STD_LOGIC;         
             reset_load  :  in STD_LOGIC;
-            led         : out STD_LOGIC_VECTOR(7 downto 0);
-            parallel_in :  in STD_LOGIC_VECTOR(7 downto 0));
+            led         : buffer STD_LOGIC_VECTOR(N-1 downto 0);
+            parallel_in :  in STD_LOGIC_VECTOR(N-1 downto 0));
 end shift_reg_PIPO;
 
 architecture Behavioral of shift_reg_PIPO is
 
---    component clk_div is
---        Generic (preset: STD_LOGIC_VECTOR(26 downto 0) := (others => '0'));
---        Port (
---                 clk  :  in STD_LOGIC;
---               reset  :  in STD_LOGIC;
---               outclk : out STD_LOGIC);
---    end component;
+    component clk_div is
+        Generic (preset: STD_LOGIC_VECTOR(26 downto 0) :=  "010111110101111000010000000");
+        Port (
+                 clk  :  in STD_LOGIC;
+               reset  :  in STD_LOGIC;
+               outclk : out STD_LOGIC);
+    end component;
     
-    signal Q      : STD_LOGIC_VECTOR(7 downto 0);
---    signal clk1Hz : STD_LOGIC;
+    signal clk1Hz : STD_LOGIC;
 
 begin
 
---clk_1Hz:clk_div 
---        port map (
---        clk    => clk,
---        reset  => reset_load,
---        outclk => clk1Hz);
+clk_1Hz:clk_div 
+        port map (
+        clk    => clk,
+        reset  => reset_load,
+        outclk => clk1Hz);
 
 process
 begin
-    wait until RISING_EDGE(clk);
-        if reset_load='1' then Q <= parallel_in;
-        else 
-            shiftright: for i in 0 to N-2 loop
-                Q(i) <= Q(i+1);
-            end loop;
-                Q(N-1) <= din;
+        if reset_load='1' then 
+            led <= parallel_in;
+        else
+            wait until clk1Hz'event and clk1Hz='1';
+                shiftright: for i in 0 to N-2 loop
+                    led(i) <= led(i+1);
+                end loop;
+                    led(N-1) <= din;
         end if;
 end process;
 
-led <= Q;
-
 end Behavioral;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

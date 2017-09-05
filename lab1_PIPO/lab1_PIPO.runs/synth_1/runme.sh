@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log tb_shift_reg_PIPO.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_shift_reg_PIPO.tcl
+EAStep vivado -log shift_reg_PIPO.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source shift_reg_PIPO.tcl

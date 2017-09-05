@@ -32,5 +32,7 @@ begin
         end if;
     end if;
 end process;
+
     outclk <= clk_aux;
+    
 end Behavioral;

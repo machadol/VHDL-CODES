@@ -4,11 +4,11 @@
   <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='4'><B>software_version_and_target_device</B></TD></TR>
 <TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>beta</B></TD><TD>FALSE</TD>
   <TD BGCOLOR='#DBE5F1'><B>build_version</B></TD><TD>1909853</TD>
-</TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>date_generated</B></TD><TD>Sun Sep  3 17:34:35 2017</TD>
+</TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>date_generated</B></TD><TD>Mon Sep  4 20:51:29 2017</TD>
   <TD BGCOLOR='#DBE5F1'><B>os_platform</B></TD><TD>LIN64</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>product_version</B></TD><TD>Vivado v2017.2 (64-bit)</TD>
   <TD BGCOLOR='#DBE5F1'><B>project_id</B></TD><TD>51c26e32525b47cfb8f18171fea88407</TD>
-</TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>project_iteration</B></TD><TD>1</TD>
+</TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>project_iteration</B></TD><TD>2</TD>
   <TD BGCOLOR='#DBE5F1'><B>random_id</B></TD><TD>4ad4ce37-a54f-431d-9105-cdc3f9c1546f</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>registration_id</B></TD><TD>211240881_0_0_515</TD>
   <TD BGCOLOR='#DBE5F1'><B>route_design</B></TD><TD>TRUE</TD>
@@ -21,7 +21,7 @@
  <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
   <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='4'><B>user_environment</B></TD></TR>
 <TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>cpu_name</B></TD><TD>Intel(R) Core(TM) i3-3217U CPU @ 1.80GHz</TD>
-  <TD BGCOLOR='#DBE5F1'><B>cpu_speed</B></TD><TD>1123.031 MHz</TD>
+  <TD BGCOLOR='#DBE5F1'><B>cpu_speed</B></TD><TD>1800.000 MHz</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>os_name</B></TD><TD>LinuxMint</TD>
   <TD BGCOLOR='#DBE5F1'><B>os_release</B></TD><TD>Linux Mint 17.3 Rosa</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>system_ram</B></TD><TD>6.000 GB</TD>
@@ -32,20 +32,25 @@
 <TR ALIGN='LEFT'>  <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>java_command_handlers</B></TD></TR>
 <TR ALIGN='LEFT'>   <TD>addsources=6</TD>
-   <TD>closeproject=4</TD>
+   <TD>autoconnecttarget=1</TD>
+   <TD>closeproject=6</TD>
    <TD>editdelete=1</TD>
+</TR><TR ALIGN='LEFT'>   <TD>launchprogramfpga=1</TD>
    <TD>newproject=1</TD>
-</TR><TR ALIGN='LEFT'>   <TD>openproject=1</TD>
-   <TD>runbitgen=1</TD>
-   <TD>runimplementation=1</TD>
-   <TD>runsynthesis=2</TD>
+   <TD>openhardwaremanager=1</TD>
+   <TD>openproject=1</TD>
+</TR><TR ALIGN='LEFT'>   <TD>runbitgen=2</TD>
+   <TD>runimplementation=2</TD>
+   <TD>runsynthesis=4</TD>
+   <TD>showview=1</TD>
 </TR><TR ALIGN='LEFT'>   <TD>simulationrun=1</TD>
+   <TD>toggleviewnavigator=1</TD>
    <TD>toolssettings=16</TD>
    <TD>unselectallcmdhandler=1</TD>
 </TR>  </TABLE>
   <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>other_data</B></TD></TR>
-<TR ALIGN='LEFT'>   <TD>guimode=5</TD>
+<TR ALIGN='LEFT'>   <TD>guimode=7</TD>
 </TR>  </TABLE>
 </TR><TR ALIGN='LEFT'>  <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>project_data</B></TD></TR>
@@ -85,15 +90,14 @@
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>post_unisim_transformation</B></TD></TR>
 <TR ALIGN='LEFT'>    <TD>bufg=1</TD>
-    <TD>carry4=28</TD>
+    <TD>carry4=40</TD>
     <TD>fdre=112</TD>
     <TD>gnd=4</TD>
 </TR><TR ALIGN='LEFT'>    <TD>ibuf=10</TD>
     <TD>lut1=108</TD>
-    <TD>lut3=12</TD>
-    <TD>lut4=12</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut5=4</TD>
-    <TD>lut6=12</TD>
+    <TD>lut2=8</TD>
+    <TD>lut3=4</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut5=32</TD>
     <TD>obuf=4</TD>
     <TD>vcc=4</TD>
 </TR>   </TABLE>
@@ -102,15 +106,14 @@
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>pre_unisim_transformation</B></TD></TR>
 <TR ALIGN='LEFT'>    <TD>bufg=1</TD>
-    <TD>carry4=28</TD>
+    <TD>carry4=40</TD>
     <TD>fdre=112</TD>
     <TD>gnd=4</TD>
 </TR><TR ALIGN='LEFT'>    <TD>ibuf=10</TD>
     <TD>lut1=108</TD>
-    <TD>lut3=12</TD>
-    <TD>lut4=12</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut5=4</TD>
-    <TD>lut6=12</TD>
+    <TD>lut2=8</TD>
+    <TD>lut3=4</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut5=32</TD>
     <TD>obuf=4</TD>
     <TD>vcc=4</TD>
 </TR>   </TABLE>
@@ -250,22 +253,20 @@
 <TR ALIGN='LEFT'>    <TD>bufg_functional_category=Clock</TD>
     <TD>bufg_used=1</TD>
     <TD>carry4_functional_category=CarryLogic</TD>
-    <TD>carry4_used=28</TD>
+    <TD>carry4_used=40</TD>
 </TR><TR ALIGN='LEFT'>    <TD>fdre_functional_category=Flop &amp; Latch</TD>
     <TD>fdre_used=112</TD>
     <TD>ibuf_functional_category=IO</TD>
     <TD>ibuf_used=10</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut1_functional_category=LUT</TD>
     <TD>lut1_used=4</TD>
-    <TD>lut3_functional_category=LUT</TD>
-    <TD>lut3_used=12</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut4_functional_category=LUT</TD>
-    <TD>lut4_used=12</TD>
+    <TD>lut2_functional_category=LUT</TD>
+    <TD>lut2_used=8</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut3_functional_category=LUT</TD>
+    <TD>lut3_used=4</TD>
     <TD>lut5_functional_category=LUT</TD>
-    <TD>lut5_used=4</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut6_functional_category=LUT</TD>
-    <TD>lut6_used=12</TD>
-    <TD>obuf_functional_category=IO</TD>
+    <TD>lut5_used=32</TD>
+</TR><TR ALIGN='LEFT'>    <TD>obuf_functional_category=IO</TD>
     <TD>obuf_used=4</TD>
 </TR>   </TABLE>
    </TD></TR>
@@ -282,8 +283,8 @@
     <TD>f8_muxes_util_percentage=0.00</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_available=20800</TD>
     <TD>lut_as_logic_fixed=0</TD>
-    <TD>lut_as_logic_used=44</TD>
-    <TD>lut_as_logic_util_percentage=0.21</TD>
+    <TD>lut_as_logic_used=48</TD>
+    <TD>lut_as_logic_util_percentage=0.23</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_memory_available=9600</TD>
     <TD>lut_as_memory_fixed=0</TD>
     <TD>lut_as_memory_used=0</TD>
@@ -298,8 +299,8 @@
     <TD>register_as_latch_util_percentage=0.00</TD>
 </TR><TR ALIGN='LEFT'>    <TD>slice_luts_available=20800</TD>
     <TD>slice_luts_fixed=0</TD>
-    <TD>slice_luts_used=44</TD>
-    <TD>slice_luts_util_percentage=0.21</TD>
+    <TD>slice_luts_used=48</TD>
+    <TD>slice_luts_util_percentage=0.23</TD>
 </TR><TR ALIGN='LEFT'>    <TD>slice_registers_available=41600</TD>
     <TD>slice_registers_fixed=0</TD>
     <TD>slice_registers_used=112</TD>
@@ -310,8 +311,8 @@
     <TD>lut_as_distributed_ram_used=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_available=20800</TD>
     <TD>lut_as_logic_fixed=0</TD>
-    <TD>lut_as_logic_used=44</TD>
-    <TD>lut_as_logic_util_percentage=0.21</TD>
+    <TD>lut_as_logic_used=48</TD>
+    <TD>lut_as_logic_util_percentage=0.23</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_memory_available=9600</TD>
     <TD>lut_as_memory_fixed=0</TD>
     <TD>lut_as_memory_used=0</TD>
@@ -328,19 +329,19 @@
     <TD>lut_flip_flop_pairs_util_percentage=0.04</TD>
     <TD>slice_available=8150</TD>
     <TD>slice_fixed=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>slice_used=42</TD>
-    <TD>slice_util_percentage=0.52</TD>
+</TR><TR ALIGN='LEFT'>    <TD>slice_used=47</TD>
+    <TD>slice_util_percentage=0.58</TD>
     <TD>slicel_fixed=0</TD>
-    <TD>slicel_used=29</TD>
+    <TD>slicel_used=33</TD>
 </TR><TR ALIGN='LEFT'>    <TD>slicem_fixed=0</TD>
-    <TD>slicem_used=13</TD>
+    <TD>slicem_used=14</TD>
     <TD>unique_control_sets_used=5</TD>
     <TD>using_o5_and_o6_fixed=5</TD>
 </TR><TR ALIGN='LEFT'>    <TD>using_o5_and_o6_used=0</TD>
     <TD>using_o5_output_only_fixed=0</TD>
     <TD>using_o5_output_only_used=0</TD>
     <TD>using_o6_output_only_fixed=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>using_o6_output_only_used=44</TD>
+</TR><TR ALIGN='LEFT'>    <TD>using_o6_output_only_used=48</TD>
 </TR>   </TABLE>
    </TD></TR>
    <TR><TD>
@@ -390,7 +391,7 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>actual_expansions=150329</TD>
+<TR ALIGN='LEFT'>    <TD>actual_expansions=175167</TD>
     <TD>bogomips=3591</TD>
     <TD>bram18=0</TD>
     <TD>bram36=0</TD>
@@ -400,15 +401,15 @@
     <TD>ctrls=5</TD>
 </TR><TR ALIGN='LEFT'>    <TD>dsp=0</TD>
     <TD>effort=2</TD>
-    <TD>estimated_expansions=91902</TD>
+    <TD>estimated_expansions=94044</TD>
     <TD>ff=112</TD>
 </TR><TR ALIGN='LEFT'>    <TD>global_clocks=1</TD>
     <TD>high_fanout_nets=0</TD>
     <TD>iob=14</TD>
-    <TD>lut=44</TD>
-</TR><TR ALIGN='LEFT'>    <TD>movable_instances=207</TD>
-    <TD>nets=321</TD>
-    <TD>pins=1326</TD>
+    <TD>lut=48</TD>
+</TR><TR ALIGN='LEFT'>    <TD>movable_instances=223</TD>
+    <TD>nets=337</TD>
+    <TD>pins=1558</TD>
     <TD>pll=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>router_runtime=0.000000</TD>
     <TD>router_timing_driven=1</TD>
@@ -463,8 +464,8 @@
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
 <TR ALIGN='LEFT'>    <TD>elapsed=00:00:37s</TD>
     <TD>hls_ip=0</TD>
-    <TD>memory_gain=450.621MB</TD>
-    <TD>memory_peak=1535.562MB</TD>
+    <TD>memory_gain=450.918MB</TD>
+    <TD>memory_peak=1535.859MB</TD>
 </TR>   </TABLE>
    </TD></TR>
   </TABLE><BR>

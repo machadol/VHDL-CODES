@@ -14,135 +14,102 @@ end top_module;
 architecture Behavioral of top_module is
 
     component div_clk is
-        Generic (preset : std_logic_vector(26 downto 0):= (others=>'0'));
         Port(
              reset  :  in STD_LOGIC;
              clk    :  in STD_LOGIC;   
-             outclk : out STD_LOGIC);         
+             outclk : out STD_LOGIC;
+		     preset :  in STD_LOGIC_VECTOR(26 downto 0));
     end component;
 
     component mux_4x1 is
-        Port (
+        Port(  
                 sel   :  in STD_LOGIC_VECTOR(1 downto 0);
-    			i0    :  in STD_LOGIC;
-                i1    :  in STD_LOGIC;
-                i2    :  in STD_LOGIC;
-                i3    :  in STD_LOGIC;
-                saida : out STD_LOGIC);
+                i0    :  in STD_LOGIC_VECTOR(26 downto 0);
+                i1    :  in STD_LOGIC_VECTOR(26 downto 0);
+			    i2    :  in STD_LOGIC_VECTOR(26 downto 0);
+			    i3    :  in STD_LOGIC_VECTOR(26 downto 0);
+			    saida : out STD_LOGIC_VECTOR(26 downto 0));
     end component;
 
-    signal count1Hz : STD_LOGIC_VECTOR(26 downto 0) := (others=>'0');
-    signal clk1Hz : STD_LOGIC := '0';
-    constant preset1Hz : STD_LOGIC_VECTOR(26 downto 0) := "010111110101111000010000000";
-    
-    signal count05Hz : STD_LOGIC_VECTOR(26 downto 0) := (others=>'0');
-    signal clk05Hz : STD_LOGIC := '0';
     constant preset05Hz : STD_LOGIC_VECTOR(26 downto 0) := "101111101011110000100000000";
-                                                            
-    signal count2Hz : STD_LOGIC_VECTOR(26 downto 0) := (others=>'0');
-    signal clk2Hz : STD_LOGIC := '0';
-    constant preset2Hz : STD_LOGIC_VECTOR(26 downto 0) := "001011111010111100001000000";
+    constant preset1Hz  : STD_LOGIC_VECTOR(26 downto 0) := "010111110101111000010000000";
+    constant preset2Hz  : STD_LOGIC_VECTOR(26 downto 0) := "001011111010111100001000000";
+    constant preset4Hz  : STD_LOGIC_VECTOR(26 downto 0) := "000101111101011110000100000";
     
-    signal count4Hz : STD_LOGIC_VECTOR(26 downto 0) := (others=>'0');
-    signal clk4Hz : STD_LOGIC := '0';
-    constant preset4Hz : STD_LOGIC_VECTOR(26 downto 0) := "000101111101011110000100000";
+    signal sel_1 : STD_LOGIC_VECTOR(1 downto 0) := sel(1 downto 0);
+    signal sel_2 : STD_LOGIC_VECTOR(1 downto 0) := sel(3 downto 2);
+    signal sel_3 : STD_LOGIC_VECTOR(1 downto 0) := sel(5 downto 4);
+    signal sel_4 : STD_LOGIC_VECTOR(1 downto 0) := sel(7 downto 6);
     
-    signal s_i0 : STD_LOGIC;
-    signal s_i1 : STD_LOGIC;
-    signal s_i2 : STD_LOGIC;
-    signal s_i3 : STD_LOGIC;
-    
+    signal preset_1 : STD_LOGIC_VECTOR(26 downto 0);
+    signal preset_2 : STD_LOGIC_VECTOR(26 downto 0);
+    signal preset_3 : STD_LOGIC_VECTOR(26 downto 0);
+    signal preset_4 : STD_LOGIC_VECTOR(26 downto 0);
+
 begin
 
-            
-clkdiv05hz: div_clk
-            generic map (preset => preset05Hz)           
-            port map (
-            reset => reset,
-            clk => clk,
-            outclk => s_i0);
-            
-clkdiv1hz: div_clk
-            generic map(preset => preset1Hz)
-            port map (
-            reset => reset,
-            clk => clk,
-            outclk => s_i1);           
-
-clkdiv2hz: div_clk
-            generic map (preset => preset2Hz)           
-            port map (
-            reset => reset,
-            clk => clk,
-            outclk => s_i2);
-
-clkdiv4hz: div_clk
-            generic map (preset => preset4Hz)           
-            port map (
-            reset => reset,
-            clk => clk,
-            outclk => s_i3);
-         
 mymux_1: mux_4x1 
             port map (
-            sel   => sel(1 downto 0),   
-            i0    => s_i0,
-            i1    => s_i1,
-            i2    => s_i2,
-            i3    => s_i3,  
-            saida => led(0));              
-         
+            sel   => sel_1,   
+            i0    => preset05Hz,  
+            i1    => preset1Hz,  
+            i2    => preset2Hz,  
+            i3    => preset4Hz,  
+            saida => preset_1);
+             
 mymux_2: mux_4x1 
             port map (
-            sel   => sel(3 downto 2),   
-            i0    => s_i0,
-            i1    => s_i1,
-            i2    => s_i2,
-            i3    => s_i3,  
-            saida => led(1));              
-         
+            sel   => sel_2,   
+            i0    => preset05Hz,  
+            i1    => preset1Hz,  
+            i2    => preset2Hz,  
+            i3    => preset4Hz,  
+            saida => preset_2);
+             
 mymux_3: mux_4x1 
             port map (
-            sel   => sel(5 downto 4),   
-            i0    => s_i0,
-            i1    => s_i1,
-            i2    => s_i2,
-            i3    => s_i3,  
-            saida => led(2));              
-         
+            sel   => sel_3,   
+            i0    => preset05Hz,  
+            i1    => preset1Hz,  
+            i2    => preset2Hz,  
+            i3    => preset4Hz,  
+            saida => preset_3);
+             
 mymux_4: mux_4x1 
             port map (
-            sel   => sel(7 downto 6),   
-            i0    => s_i0,
-            i1    => s_i1,
-            i2    => s_i2,
-            i3    => s_i3,  
-            saida => led(3));              
-
-                  
+            sel   => sel_4,   
+            i0    => preset05Hz,  
+            i1    => preset1Hz,  
+            i2    => preset2Hz,  
+            i3    => preset4Hz,  
+            saida => preset_4); 
+            
+clkdiv_1: div_clk
+            port map (
+            reset => reset,
+            clk   => clk,
+            outclk => led(0),
+            preset => preset_1);            
+            
+clkdiv_2: div_clk
+            port map (
+            reset => reset,
+            clk   => clk,
+            outclk => led(1),
+            preset => preset_2);            
+                
+clkdiv_3: div_clk
+            port map (
+            reset => reset,
+            clk   => clk,
+            outclk => led(2),
+            preset => preset_3);            
+                
+clkdiv_4: div_clk
+            port map (
+            reset => reset,
+            clk   => clk,
+            outclk => led(3),
+            preset => preset_4);            
+      
 end behavioral;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

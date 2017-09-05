@@ -4,11 +4,11 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity div_clk is
-	Generic (preset : STD_LOGIC_VECTOR(26 downto 0):= (others=>'0'));
 	Port (  
 	       reset  :  in STD_LOGIC;
 		   clk    :  in STD_LOGIC;
-		   outclk : out STD_LOGIC);
+		   outclk : out STD_LOGIC;
+		   preset :  in STD_LOGIC_VECTOR(26 downto 0));
 end div_clk;
 
 architecture Behavioral of div_clk is

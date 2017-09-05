@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Sun Sep  3 17:30:47 2017
+| Date         : Mon Sep  4 20:50:18 2017
 | Host         : machado running 64-bit Linux Mint 17.3 Rosa
 | Command      : report_utilization -file top_module_utilization_placed.rpt -pb top_module_utilization_placed.pb
 | Design       : top_module
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs              |   44 |     0 |     20800 |  0.21 |
-|   LUT as Logic          |   44 |     0 |     20800 |  0.21 |
+| Slice LUTs              |   48 |     0 |     20800 |  0.23 |
+|   LUT as Logic          |   48 |     0 |     20800 |  0.23 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |  112 |     0 |     41600 |  0.27 |
 |   Register as Flip Flop |  112 |     0 |     41600 |  0.27 |
@@ -67,12 +67,12 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |   42 |     0 |      8150 |  0.52 |
-|   SLICEL                                  |   29 |     0 |           |       |
-|   SLICEM                                  |   13 |     0 |           |       |
-| LUT as Logic                              |   44 |     0 |     20800 |  0.21 |
+| Slice                                     |   47 |     0 |      8150 |  0.58 |
+|   SLICEL                                  |   33 |     0 |           |       |
+|   SLICEM                                  |   14 |     0 |           |       |
+| LUT as Logic                              |   48 |     0 |     20800 |  0.23 |
 |   using O5 output only                    |    0 |       |           |       |
-|   using O6 output only                    |   44 |       |           |       |
+|   using O6 output only                    |   48 |       |           |       |
 |   using O5 and O6                         |    0 |       |           |       |
 | LUT as Memory                             |    0 |     0 |      9600 |  0.00 |
 |   LUT as Distributed RAM                  |    0 |     0 |           |       |
@@ -177,13 +177,12 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |  112 |        Flop & Latch |
-| CARRY4   |   28 |          CarryLogic |
-| LUT6     |   12 |                 LUT |
-| LUT4     |   12 |                 LUT |
-| LUT3     |   12 |                 LUT |
+| CARRY4   |   40 |          CarryLogic |
+| LUT5     |   32 |                 LUT |
 | IBUF     |   10 |                  IO |
+| LUT2     |    8 |                 LUT |
 | OBUF     |    4 |                  IO |
-| LUT5     |    4 |                 LUT |
+| LUT3     |    4 |                 LUT |
 | LUT1     |    4 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+

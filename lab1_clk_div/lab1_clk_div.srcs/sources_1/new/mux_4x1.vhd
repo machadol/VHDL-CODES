@@ -2,13 +2,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity mux_4x1 is
-	Port (  
-	        sel   :  in STD_LOGIC_VECTOR(1 downto 0);
-			i0    :  in STD_LOGIC;
-			i1    :  in STD_LOGIC;
-			i2    :  in STD_LOGIC;
-			i3    :  in STD_LOGIC;
-			saida : out STD_LOGIC);
+    Port(
+            sel   :  in STD_LOGIC_VECTOR(1 downto 0);
+			i0    :  in STD_LOGIC_VECTOR(26 downto 0);
+			i1    :  in STD_LOGIC_VECTOR(26 downto 0);
+			i2    :  in STD_LOGIC_VECTOR(26 downto 0);
+			i3    :  in STD_LOGIC_VECTOR(26 downto 0);
+			saida : out STD_LOGIC_VECTOR(26 downto 0));
 end mux_4x1;
 
 architecture Behavioral of mux_4x1 is

@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_shift_reg_PIPO_behav/xsimk -simmode gui -wdb tb_shift_reg_PIPO_behav.wdb -simrunnum 0 -socket 53718
+Running: xsim.dir/tb_shift_reg_PIPO_behav/xsimk -simmode gui -wdb tb_shift_reg_PIPO_behav.wdb -simrunnum 0 -socket 39394
 Design successfully loaded
 Design Loading Memory Usage: 41572 KB (Peak: 41624 KB)
 Design Loading CPU Usage: 10 ms
 Simulation completed
-Simulation Memory Usage: 125320 KB (Peak: 188848 KB)
-Simulation CPU Usage: 60 ms
+Simulation Memory Usage: 126348 KB (Peak: 188848 KB)
+Simulation CPU Usage: 470 ms

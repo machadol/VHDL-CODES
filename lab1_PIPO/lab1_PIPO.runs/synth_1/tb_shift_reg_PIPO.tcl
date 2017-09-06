@@ -16,8 +16,8 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/sources_1/new/clk_div.vhd
   /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/sources_1/new/shift_reg_PIPO.vhd
+  /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/sources_1/new/tb_shift_reg_PIPO.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -27,13 +27,10 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/constrs_1/imports/lab1_PIPO/Basys3_Master.xdc
-set_property used_in_implementation false [get_files /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/lab1_PIPO/lab1_PIPO.srcs/constrs_1/imports/lab1_PIPO/Basys3_Master.xdc]
+
+synth_design -top tb_shift_reg_PIPO -part xc7a35tcpg236-1
 
 
-synth_design -top shift_reg_PIPO -part xc7a35tcpg236-1
+write_checkpoint -force -noxdef tb_shift_reg_PIPO.dcp
 
-
-write_checkpoint -force -noxdef shift_reg_PIPO.dcp
-
-catch { report_utilization -file shift_reg_PIPO_utilization_synth.rpt -pb shift_reg_PIPO_utilization_synth.pb }
+catch { report_utilization -file tb_shift_reg_PIPO_utilization_synth.rpt -pb tb_shift_reg_PIPO_utilization_synth.pb }

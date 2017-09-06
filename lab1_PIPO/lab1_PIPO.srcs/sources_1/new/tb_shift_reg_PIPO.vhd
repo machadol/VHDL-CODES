@@ -12,7 +12,7 @@ architecture Behavioral of tb_shift_reg_PIPO is
                 clk         :  in STD_LOGIC;         
                 din         :  in STD_LOGIC;         
                 reset_load  :  in STD_LOGIC;
-                led         : out STD_LOGIC_VECTOR(7 downto 0);
+                led         : buffer STD_LOGIC_VECTOR(7 downto 0);
                 parallel_in :  in STD_LOGIC_VECTOR(7 downto 0)); 
     end component;    
     
@@ -35,7 +35,7 @@ uut: shift_reg_PIPO
 clk:process
 begin
     s_clk <= '0';
-    wait for 10 ns;
+    wait for 1 ns;
     s_clk <= '1';
     wait for 10 ns;
 end process;

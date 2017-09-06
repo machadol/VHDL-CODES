@@ -13,30 +13,30 @@ end shift_reg_PIPO;
 
 architecture Behavioral of shift_reg_PIPO is
 
-    component clk_div is
-        Generic (preset: STD_LOGIC_VECTOR(26 downto 0) :=  "010111110101111000010000000");
-        Port (
-                 clk  :  in STD_LOGIC;
-               reset  :  in STD_LOGIC;
-               outclk : out STD_LOGIC);
-    end component;
+--    component clk_div is
+--        Generic (preset: STD_LOGIC_VECTOR(26 downto 0) :=  "010111110101111000010000000");
+--        Port (
+--                 clk  :  in STD_LOGIC;
+--               reset  :  in STD_LOGIC;
+--               outclk : out STD_LOGIC);
+--    end component;
     
-    signal clk1Hz : STD_LOGIC;
+--    signal clk1Hz : STD_LOGIC;
 
 begin
 
-clk_1Hz:clk_div 
-        port map (
-        clk    => clk,
-        reset  => reset_load,
-        outclk => clk1Hz);
+--clk_1Hz:clk_div 
+--        port map (
+--        clk    => clk,
+--        reset  => reset_load,
+--        outclk => clk1Hz);
 
 process
 begin
+    wait until RISING_EDGE(clk);
         if reset_load='1' then 
             led <= parallel_in;
         else
-            wait until RISING_EDGE(clk1Hz);
                 shiftright: for i in 0 to N-2 loop
                     led(i) <= led(i+1);
                 end loop;

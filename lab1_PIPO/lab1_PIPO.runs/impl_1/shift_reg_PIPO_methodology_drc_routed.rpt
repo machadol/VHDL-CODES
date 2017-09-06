@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Tue Sep  5 15:16:05 2017
+| Date         : Wed Sep  6 08:13:47 2017
 | Host         : machado running 64-bit Linux Mint 17.3 Rosa
 | Command      : report_methodology -file shift_reg_PIPO_methodology_drc_routed.rpt -rpx shift_reg_PIPO_methodology_drc_routed.rpx
 | Design       : shift_reg_PIPO

@@ -33,11 +33,11 @@ clk_1Hz:clk_div
 
 process
 begin
-
+    
     if reset_load='1' then 
         led <= parallel_in;
     else
-        wait until RISING_EDGE(clk);
+        wait until RISING_EDGE(clk1Hz);
             shiftright: for i in 0 to N-2 loop
                 led(i) <= led(i+1);
             end loop;

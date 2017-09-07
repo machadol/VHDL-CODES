@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../lab1_PIPO.srcs/sources_1/new/shift_reg_PIPO.vhd"
-vhdl xil_defaultlib  "../../../lab1_PIPO.srcs/sources_1/new/tb_shift_reg_PIPO.vhd"
-
-# Do not sort compile order
-nosort

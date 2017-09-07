@@ -1,10 +1,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity tb_shift_reg_PIPO is
-end tb_shift_reg_PIPO;
+entity tb_shift_reg_SIPO is
+end tb_shift_reg_SIPO;
 
-architecture Behavioral of tb_shift_reg_PIPO is
+architecture Behavioral of tb_shift_reg_SIPO is
 
     component shift_reg_SIPO is
         Generic(N : INTEGER := 8);
@@ -35,7 +35,7 @@ uut: shift_reg_SIPO
 clk:process
 begin
     s_clk <= '0';
-    wait for 1 ns;
+    wait for 10 ns;
     s_clk <= '1';
     wait for 10 ns;
 end process;

@@ -12,7 +12,7 @@
 !*.xci
 !*.dcp
 !*.vds
-!*.pb
+*.pb
 !*.ui
 !*.ooc
 
@@ -20,12 +20,10 @@
 !*.mdl
 !*.slx
 !*.bxml
-!*.xml
-*.cache/*
 
 #Simulation logic analyzer
-!*.wcfg
-!*.coe
+*.wcfg
+*.coe
 
 #MIG
 !*.prj
@@ -33,20 +31,20 @@
 
 #Project files
 !*.xpr
-!*.xml
+*.xml
 #Constraint files
 !*.xdc
 
 #TCL - files
-!*.tcl
+*.tcl
 
 #Journal - files
-!*.jou
+*.jou
 
 #Reports
 !*.rpt
 !*.txt
-!*.vdi
+*.vdi
 
 #C-files
 !*.c

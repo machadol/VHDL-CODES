@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Sep 12 09:59:10 2017
+# Process ID: 3035
+# Current directory: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.sim/sim_1/behav/xsim.dir/tb_top_module_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.sim/sim_1/behav/webtalk.log
+# Journal file: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.sim/sim_1/behav/xsim.dir/tb_top_module_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:06 . Memory (MB): peak = 232.117 ; gain = 0.000 ; free physical = 3658 ; free virtual = 6988
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 12 09:59:16 2017...

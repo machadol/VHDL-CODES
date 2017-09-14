@@ -1,0 +1,262 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Sep  7 18:55:00 2017
+# Process ID: 29845
+# Current directory: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.runs/synth_1
+# Command line: vivado -log tb_top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_top_module.tcl
+# Log file: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.runs/synth_1/tb_top_module.vds
+# Journal file: /home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source tb_top_module.tcl -notrace
+Command: synth_design -top tb_top_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29852 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1154.523 ; gain = 56.992 ; free physical = 1950 ; free virtual = 6048
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tb_top_module' [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:7]
+INFO: [Synth 8-3491] module 'top_module' declared at '/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/top_module.vhd:4' bound to instance 'UUT' of component 'top_module' [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'top_module' [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/top_module.vhd:16]
+INFO: [Synth 8-3491] module 'RAM_controller' declared at '/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/RAM_controller.vhd:4' bound to instance 'myCONTROLLER' of component 'RAM_controller' [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/top_module.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'RAM_controller' [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/RAM_controller.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'RAM_controller' (1#1) [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/RAM_controller.vhd:14]
+INFO: [Synth 8-3491] module 'RAM' declared at '/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/RAM.vhd:5' bound to instance 'myRAM' of component 'RAM' [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/top_module.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'RAM' [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/RAM.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (2#1) [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/RAM.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (3#1) [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/top_module.vhd:16]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:46]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:59]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:67]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:72]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:76]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:80]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:84]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:89]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:91]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:93]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:95]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:97]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'tb_top_module' (4#1) [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/tb_top_module.vhd:7]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1196.031 ; gain = 98.500 ; free physical = 1960 ; free virtual = 6058
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1196.031 ; gain = 98.500 ; free physical = 1960 ; free virtual = 6058
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1204.031 ; gain = 106.500 ; free physical = 1960 ; free virtual = 6058
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.srcs/sources_1/new/RAM.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1212.039 ; gain = 114.508 ; free physical = 1953 ; free virtual = 6051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RAM_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module RAM 
+Detailed RTL Component Info : 
++---RAMs : 
+	              128 Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (UUT/myCONTROLLER/current_state_reg[1]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myCONTROLLER/current_state_reg[0]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myRAM/data_out_reg[7]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myRAM/data_out_reg[6]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myRAM/data_out_reg[5]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myRAM/data_out_reg[4]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myRAM/data_out_reg[3]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myRAM/data_out_reg[2]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myRAM/data_out_reg[1]) is unused and will be removed from module tb_top_module.
+WARNING: [Synth 8-3332] Sequential element (UUT/myRAM/data_out_reg[0]) is unused and will be removed from module tb_top_module.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1296.109 ; gain = 198.578 ; free physical = 1828 ; free virtual = 5926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1296.109 ; gain = 198.578 ; free physical = 1827 ; free virtual = 5925
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1827 ; free virtual = 5925
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.113 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1304.121 ; gain = 206.582 ; free physical = 1825 ; free virtual = 5923
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+17 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1411.996 ; gain = 327.051 ; free physical = 1775 ; free virtual = 5868
+INFO: [Common 17-1381] The checkpoint '/home/lucas/Documents/UnB/Disciplinas/ED2/VHDL-CODES/Teste_5_RAM/Teste_5_RAM.runs/synth_1/tb_top_module.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1436.008 ; gain = 0.000 ; free physical = 1776 ; free virtual = 5870
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  7 18:55:32 2017...

@@ -112,4 +112,4 @@ clkdiv_4: div_clk
             outclk => led(3),
             preset => preset_4);            
       
-end behavioral;
+end Behavioral;

@@ -21,6 +21,7 @@
 !*.slx
 !*.bxml
 !*.xml
+*.cache/*
 
 #Simulation logic analyzer
 !*.wcfg

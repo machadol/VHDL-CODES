@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../Lab2_FSM_detector.srcs/sources_1/new/FSM1.vhd"
-vhdl xil_defaultlib  "../../../Lab2_FSM_detector.srcs/sources_1/new/FSM2.vhd"
-vhdl xil_defaultlib  "../../../Lab2_FSM_detector.srcs/sources_1/new/div_clk.vhd"
-vhdl xil_defaultlib  "../../../Lab2_FSM_detector.srcs/sources_1/new/top_module.vhd"
-
-# Do not sort compile order
-nosort

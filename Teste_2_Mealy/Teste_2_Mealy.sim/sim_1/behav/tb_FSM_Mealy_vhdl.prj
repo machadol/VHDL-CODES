@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../Teste_2_Mealy.srcs/sources_1/new/FSM_Mealy.vhd"
-vhdl xil_defaultlib  "../../../Teste_2_Mealy.srcs/sources_1/new/tb_FSM_Mealy.vhd"
-
-# Do not sort compile order
-nosort

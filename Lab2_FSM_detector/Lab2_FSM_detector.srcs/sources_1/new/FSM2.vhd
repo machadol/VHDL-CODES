@@ -1,3 +1,4 @@
+-- DETECTOR DA SEQUÊNCIA 10100 S2=(9+8+3)=20
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -5,7 +6,7 @@ entity FSM2 is
     Port (
             clk   :  in STD_LOGIC;
             B     :  in STD_LOGIC;
-            reset :  in STD_LOGIC;
+            rst   :  in STD_LOGIC;
             Z2    : out STD_LOGIC);
 end FSM2;
 
@@ -16,10 +17,10 @@ architecture Behavioral of FSM2 is
 
 begin
 
-armazena_estado: process(clk, reset)
+armazena_estado: process(clk, rst)
 begin
     if RISING_EDGE(clk) then
-        if reset = '1' then
+        if rst = '1' then
             current_state <= s0;
         else
             current_state <= next_state;            

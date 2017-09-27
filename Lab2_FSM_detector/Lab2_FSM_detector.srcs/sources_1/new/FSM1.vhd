@@ -1,3 +1,4 @@
+-- DETECTOR DA SEQUÊNCIA 10001 S1=(9+3+5)=17
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -5,7 +6,7 @@ entity FSM1 is
     Port (
             clk   :  in STD_LOGIC;
             A     :  in STD_LOGIC;
-            reset :  in STD_LOGIC;
+            rst   :  in STD_LOGIC;
             Z1    : out STD_LOGIC);
 end FSM1;
 
@@ -16,10 +17,10 @@ architecture Behavioral of FSM1 is
 
 begin
 
-armazena_estado: process(clk, reset)
+armazena_estado: process(clk, rst)
 begin
     if RISING_EDGE(clk) then
-        if reset = '1' then
+        if rst = '1' then
             current_state <= s0;
         else 
             current_state <= next_state; 

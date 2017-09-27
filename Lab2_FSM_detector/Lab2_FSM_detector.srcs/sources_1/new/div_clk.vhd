@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity div_clk is
     Generic(preset : STD_LOGIC_VECTOR(27 downto 0) := "1011111010111100001000000000");
     Port ( 
-            reset  :  in STD_LOGIC;
+            rst    :  in STD_LOGIC;
             clk    :  in STD_LOGIC; 
             outclk : out STD_LOGIC);
 end div_clk;
@@ -18,10 +18,10 @@ architecture Behavioral of div_clk is
     
 begin
 
-process(clk, reset)
+process(clk,rst)
 begin
     if RISING_EDGE(clk) then
-        if reset = '1' then
+        if rst = '1' then
             count   <= (others=>'0');
             clk_aux <= '0';
         elsif count = preset then

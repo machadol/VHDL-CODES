@@ -192,7 +192,7 @@ Program_rom1: mult
 Program_rom2: somador                    
     generic map(             C_FAMILY => "7S",
                     C_RAM_SIZE_KWORDS => 2,   
-                 C_JTAG_LOADER_ENABLE => 1)    
+                 C_JTAG_LOADER_ENABLE => 0)    
     port map(      address => address2,      
                instruction => instruction2,
                     enable => bram_enable2,
@@ -200,9 +200,9 @@ Program_rom2: somador
                        clk => clk);
 
 Program_rom3: shift
-    generic map(             C_FAMILY => "V6",   
+    generic map(             C_FAMILY => "7S",   
                     C_RAM_SIZE_KWORDS => 2,      
-                 C_JTAG_LOADER_ENABLE => 1)       
+                 C_JTAG_LOADER_ENABLE => 0)       
     port map(      address => address3,      
                instruction => instruction3,
                     enable => bram_enable3,

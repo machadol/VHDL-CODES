@@ -228,32 +228,33 @@ program_rom3: shift
 inputs:process(clk)
 begin
     if RISING_EDGE(clk) then
-        if port_id1(1 downto 0) = "01" and read_strobe1='1' then in_port1 <= "00" & x(5 downto 0);           end if; 
+        if port_id1(1 downto 0) = "001" and read_strobe1='1' then in_port1 <= "00" & x(5 downto 0);           end if; 
 
-        if port_id2(1 downto 0) = "10" and read_strobe2='1' then in_port2 <= out_mult(7 downto 0);           end if;
-        if port_id2(1 downto 0) = "01" and read_strobe2='1' then in_port2 <= "0000" & out_mult(11 downto 8); end if;
+        if port_id2(1 downto 0) = "010" and read_strobe2='1' then in_port2 <= out_mult(7 downto 0);           end if;
+        if port_id2(1 downto 0) = "001" and read_strobe2='1' then in_port2 <= "0000" & out_mult(11 downto 8); end if;
 
-        if port_id3(1 downto 0) = "10" and read_strobe3='1' then in_port3 <= out_soma(7 downto 0);           end if;
-        if port_id3(1 downto 0) = "01" and read_strobe3='1' then in_port3 <= "0000" & out_soma(11 downto 8); end if;        
---        if port_id3(2 downto 0) = "101" and read_strobe3='1' then in_port3 <= "0000000" & out_soma(11 downto 8); end if;        
+        if port_id3(1 downto 0) = "010" and read_strobe3='1' then in_port3 <= out_soma(7 downto 0);           end if;
+        if port_id3(1 downto 0) = "001" and read_strobe3='1' then in_port3 <= "0000" & out_soma(11 downto 8); end if;        
+        if port_id3(2 downto 0) = "101" and read_strobe3='1' then in_port3 <= "0000000" & x(6); end if;        
     end if;
 end process;
  
 outputs:process(clk)
 begin
     if RISING_EDGE(clk) then
-        if port_id1(1 downto 0) = "10"  and write_strobe1='1' then out_mult(7 downto 0) <= out_port1;                 end if; -- LSB 
-        if port_id1(1 downto 0) = "11"  and write_strobe1='1' then out_mult(11 downto 8) <= out_port1(3 downto 0);    end if; -- MSB 
+        if port_id1(1 downto 0) = "10"  and write_strobe1='1' then out_mult(7 downto 0)   <= out_port1;              end if; -- LSB 
+        if port_id1(1 downto 0) = "11"  and write_strobe1='1' then out_mult(11 downto 8)  <= out_port1(3 downto 0);  end if; -- MSB 
         
-        if port_id2(1 downto 0) = "11"  and write_strobe2='1' then out_soma(7 downto 0) <= out_port2;                end if; -- LSB
-        if port_id2(2 downto 0) = "100" and write_strobe2='1' then out_soma(11 downto 8) <= out_port2(3 downto 0);   end if; -- MSB
+        if port_id2(1 downto 0) = "11"  and write_strobe2='1' then out_soma(7 downto 0)   <= out_port2;              end if; -- LSB
+        if port_id2(2 downto 0) = "100" and write_strobe2='1' then out_soma(11 downto 8)  <= out_port2(3 downto 0);  end if; -- MSB
 
-        if port_id3(1 downto 0) = "11"  and write_strobe3='1' then out_shift(7 downto 0) <= out_port3;               end if; -- LSB
+        if port_id3(1 downto 0) = "11"  and write_strobe3='1' then out_shift(7 downto 0)  <= out_port3;              end if; -- LSB
         if port_id3(2 downto 0) = "100" and write_strobe3='1' then out_shift(11 downto 8) <= out_port3(3 downto 0);  end if; -- MSB
     end if;
 end process;                       
 
 saida <= out_shift;
+
 decoder: bin7seg_mux_anodo 
             port map (  in12bits => out_soma,
                          clock   => clk,
